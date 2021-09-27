@@ -1,0 +1,10 @@
+<div>
+    <form class="barcode-form">
+        <mat-form-field class="barcode-form-full-width" appearance="fill">
+            <mat-label>{{barcodeLabel}}</mat-label>
+            <input matInput name="barcodeInput" #barcode [(ngModel)]="barcodeValue" maxlength="256"
+                placeholder="Start scanning..." (keyup)="onScan($event)" onpaste="return false;">
+            <mat-hint align="start"><strong>Click input box to focus and scan</strong> </mat-hint>
+        </mat-form-field>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<p>home works!</p>
+
+<hng-barcode barcodeLength=5 barcodeLabel='My custom hng barcode' (onScanEvent)="onScan($event)"></hng-barcode>
+
+<!-- <app-barcode barcodeLength=5 barcodeLabel='My custom built-in barcode' (onScanEvent)="onScan($event)"></app-barcode> -->
+
+<div>
+    <ul>
+        <li *ngFor="let product of productList">
+            {{product.Barcode}} - {{product.ID}}
+        </li>
+    </ul>
+</div>
